@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my portfolio displaying Data Science, Data Analysis, and Data Visualization. See my latest projects, skills, and experience in modeling, visualization, and business analytics.">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ad9a5c0db4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container" id="block">
+            <nav>
+                 <h1><span>R</span>utik.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Graphics / Product Designer</p>
+                <h1>Hi, I'm <span>Rutik</span>  Narute<br>from United States</h1>
+                <a href="https://drive.google.com/file/d/1bsymmfp5QE7D9bf1KFEcoV-Sj1Fmo5zf/view?usp=sharing" target="_blank" class="resume-btn">Resume</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="Rutik Narute Personal Logo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Creative graphic designer with a sharp eye for detail and a knack for making designs pop. Skilled in Adobe Photoshop and image editing, I craft eye-catching visuals for print, digital, and branding. Always learning, always creating.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('internships')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Adobe Photoshop Suite</span><br>Adobe Photoshop, Illustrator, InDesign, XD, Premiere Pro</li>
+                                <li><span>Graphic Design</span><br>Image Editing, Typography, Branding, Poster Design, Brochure Design, Thumbnail Creation</li>
+                                <li><span>UI/UX Design</span><br>Wireframing, Prototyping, Figma, Adobe XD, Sketch, User Research, UI Design, UX Principles, UX Research</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="internships">
+                            <ul>
+                                <li><span>MedPlus</span><br>Graphics & Product Design Intern</li>
+                                <li><span>Microcare Computers</span><br>UI Intern</li>
+                                <li><span>VPKBIET University</span><br>Graphics Assistant</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>California State University Los Angeles</span><br>Master’s of Science in Computer Science</li>
+                                <li><span>Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering & Technology</span><br>Honor Minor Program - (Artificial Intelligence and Data Science)</li>
+                                <li><span>Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering & Technology</span><br>Bachelor of Engineering in Information Technology</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I create eye-catching visuals for branding, marketing, and digital content. Using tools like Adobe Photoshop, Illustrator, and Canva, I design logos, posters, brochures, and social media graphics that effectively communicate ideas and engage audiences.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>UI Design</h2>
+                    <p>I design intuitive and visually appealing user interfaces that enhance user experience. Using tools like Figma, Adobe XD, and Sketch, I create wireframes, prototypes, and responsive designs that make applications and websites easy to use and engaging.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h2>Product Design</h2>
+                    <p>I create user-centered designs that blend functionality with aesthetics. Using tools like Figma, Adobe XD, and Sketch, I design intuitive interfaces, wireframes, and prototypes. I focus on usability, interaction design, and visual storytelling to craft seamless digital experiences that meet user needs.</p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+        <!-- ----------------- My Work Section ----------------- -->
+<div id="work">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-gallery">
+            <div class="work-item"><img src="images/brown.jpg" alt="Work 1"></div>
+            <div class="work-item"><img src="images/trasure.png" alt="Work 2"></div>
+            <div class="work-item"><img src="images/coca cola.jpg" alt="Work 3"></div>
+            <div class="work-item"><img src="images/dalquer man.png" alt="Work 4"></div>
+            <div class="work-item"><img src="images/girl.png" alt="Work 5"></div>
+            <div class="work-item"><img src="images/payment.jpg" alt="Work 6"></div>
+            <div class="work-item"><img src="images/Prem 2K24.jpg" alt="Work 7"></div>
+            <div class="work-item"><img src="images/cat.png" alt="Work 8"></div>
+            <div class="work-item"><img src="images/Travel000000003.jpg" alt="Work 9"></div>
+            <div class="work-item"><img src="images/pepsi.jpg" alt="Work 10"></div>
+            <div class="work-item"><img src="images/fashion.jpg" alt="Work 10"></div>
+            <div class="work-item"><img src="images/ai.jpg" alt="Work 10"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+     
+     <div id="portfolio" >
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/medplus.png" alt="eCommerce Sales Platform Dashboard">
+                    <div class="layer">
+                        <h3>MedPlus</h3>
+                            <a href="project-details.html">Explore More</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pepsi.jpg" alt="British Airways Data Science Analysis">
+                    <div class="layer">
+                        <h3>Poster Design</h3>
+                            <a href="project-details02.html">Explore More</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ai.jpg" alt="Sentiment Analysis of US Airlines">
+                    <div class="layer">
+                        <h3>Product Marketing Design</h3>
+                            <a href="project-details03.html">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills & Tools</h1>
+            <div class="skills-box">
+                <div class="skill">
+                    <img src="images/PS.png" alt="Power BI">
+                    <span>Photoshop</span>
+                </div>
+                <div class="skill">
+                    <img src="images/illustrator logo.png" alt="Python">
+                    <span>Illustrator</span>
+                </div>
+                <div class="skill">
+                    <img src="images/poster.png" alt="Tableau">
+                    <span>Poster Design</span>
+                </div>
+                <div class="skill">
+                    <img src="images/figma.png" alt="Excel">
+                    <span>Figma</span>
+                </div>
+                <div class="skill">
+                    <img src="images/Id.png" alt="Excel">
+                    <span>InDesign</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Let's Start a Conversation</h1>
+            <div class="row-contact">
+                <div class="contact">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="resume_btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Follow Me Section -->
+            <div class="footer-section follow-me">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rutik-narute-8256a1221/" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/rutiknarute" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.behance.net/hrutiknarute" aria-label="Behance">
+                        <i class="fa-brands fa-square-behance"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Contact Me Section -->
+            <div class="footer-section contact-me">
+                <h3>Contact Me</h3>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:rnarute@calstatela.edu">rnarute@calstatela.edu</a></p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+16264931810">+1 (626) 493 1810</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> Monterey Park, CA, USA</p>
+            </div>
+            
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 All Rights Reserved | Designed by Rutik N</p>
+        </div>
+    </footer>
+    
+    
+    
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <script>
+
+        var sidemeu =document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxH2JVybcgNif7HCdEbH4uUAyPcLYBbEohukIe2jE461YnPmPU0upYnUKPvoP4x33HH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg") 
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
