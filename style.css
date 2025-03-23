@@ -314,8 +314,6 @@ nav ul li a:hover::after{
 
 
 
-
-
 #portfolio {
     padding: 50px 0;
 }
@@ -805,6 +803,7 @@ form textarea {
 #work:hover {
     background: white;
     color: #333;
+    transition: background 0.5s, color 0.5s;
 }
 
 #work .sub-title {
@@ -821,7 +820,7 @@ form textarea {
 
 .work-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -847,6 +846,20 @@ form textarea {
 
 .work-item:hover img {
     /* opacity: 0.9; */
+}
+
+
+/* Work Section Captions */
+.work-caption {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#work:hover .work-caption {
+    color: #333;
 }
 
 /* Responsive Design */
